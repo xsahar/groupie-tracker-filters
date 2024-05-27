@@ -25,7 +25,7 @@ func FetchData(url string, data interface{}) error {
 	defer response.Body.Close()
 
 	if response.StatusCode != http.StatusOK {
-		return fmt.Errorf("Request failed with status code: %d", response.StatusCode)
+		return fmt.Errorf("request failed with status code: %d", response.StatusCode)
 	}
 
 	body, err := ioutil.ReadAll(response.Body)
