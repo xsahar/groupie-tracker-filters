@@ -19,5 +19,3 @@ The Groupie Tracker project involves creating a user-friendly website with Go an
 ## Authors
 
 - [@sahahmed](https://learn.reboot01.com/git/sahahmed)
-- [@bisa](https://learn.reboot01.com/git/bisa)
-- [syusuf](https://learn.reboot01.com/git/syusuf)
