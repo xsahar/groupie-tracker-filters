@@ -1,0 +1,197 @@
+    html, body {
+          margin: 0;
+          padding: 0;
+        }
+        
+        /* Set box-sizing to border-box for all elements */
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        
+        /* Global styles */
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f1f1;
+          color: #333;
+        }
+        
+        .containerNew {
+          margin: 20px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .title {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        
+        .title h1 {
+          font-size: 24px;
+        }
+        
+        .filter {
+          margin-bottom: 20px;
+        }
+        
+        .checkBoxes {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        
+        .checkBoxes legend {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .checkBoxes input[type="checkbox"],
+        .checkBoxes label {
+          margin-right: 10px;
+        }
+        
+        .loccc {
+          margin-top: 10px;
+        }
+        
+        .loccc legend {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .loccc input {
+          width: 100%;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        .wrrr {
+          margin-bottom: 20px;
+        }
+        
+        .values {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        
+        .values p {
+          font-weight: bold;
+        }
+        
+        .cont {
+          position: relative;
+        }
+        
+        .slider-track,
+        .slider-track2 {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: #ccc;
+          transform: translateY(-50%);
+        }
+        
+        input[type="range"] {
+          -webkit-appearance: none;
+          width: 100%;
+          margin: 5px 0;
+        }
+        
+        input[type="range"]:focus {
+          outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background-color: #4CAF50;
+          cursor: pointer;
+        }
+        
+        input[type="range"]::-moz-range-thumb {
+          width: 16px;
+          height: 16px;
+          border: 0;
+          border-radius: 50%;
+          background-color: #4CAF50;
+          cursor: pointer;
+        }
+        
+        .values span {
+          font-weight: bold;
+        }
+        
+        .bottonNew {
+          text-align: center;
+        }
+        
+        button[type="submit"] {
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 20px;
+        }
+        
+        .wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 20px;
+        }
+        
+        .artist-card {
+          width: 250px; /* Increased card width */
+          height: 350px; /* Increased card height */
+          margin: 10px;
+          background-color: #fff;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          overflow: hidden;
+          padding: 10px;
+          transition: transform 0.3s;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        
+        .artist-card:hover {
+          transform: scale(1.1);
+        }
+        
+        .artist-card a {
+          text-decoration: none;
+          color: inherit;
+        }
+        
+        .artist-card img {
+          width: 100%;
+          height: 250px; /* Adjusted image height */
+          object-fit: cover;
+          border-radius: 5px;
+          margin-bottom: 10px;
+        }
+        
+        .artist-name {
+          font-weight: bold;
+          color: #4CAF50;
+          margin-bottom: 5px;
+        }
