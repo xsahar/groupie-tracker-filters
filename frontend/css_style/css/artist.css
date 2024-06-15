@@ -1,108 +1,110 @@
-/* styles.css */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title a {
-    /* text-decoration: none; */
-    color: #333;
-    font-weight: bold;
-    font-size: 50px;
-  }
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title a {
+  text-decoration: none;
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.info {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.members-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.members-list li {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.image-container img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.concert-info {
+  margin-top: 60px;
+}
+
+.concert-info h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.concert-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.concert-list li {
+  margin-bottom: 30px;
+}
+
+.city {
+  font-weight: bold;
+  font-size: 20px;
+  color: #4CAF50;
+}
+
+.dates {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 600px) {
   .box {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+    flex-direction: column;
   }
-  
+
   .info {
-    flex: 1;
-    padding-right: 20px;
+    padding-right: 0;
+    margin-top: 30px;
   }
-  
-  .info h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .members-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .members-list li {
-    margin-bottom: 5px;
-  }
-  
+
   .image-container img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
   }
-  
+
   .concert-info {
     margin-top: 40px;
   }
-  
-  .concert-info h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .concert-list {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 10px;
-  }
-  
-  .concert-list li {
-    margin-bottom: 20px;
-  }
-  
-  .city {
-    font-weight: bold;
-    font-size: 16px;
-    color: #555;
-  }
-  
+
+  .city,
   .dates {
-    margin-left: 10px;
-    font-size: 14px;
-    color: #777;
+    font-size: 16px;
   }
-  
-  /* Additional styles for responsiveness */
-  @media (max-width: 600px) {
-    .box {
-      flex-direction: column;
-    }
-  
-    .info {
-      padding-right: 0;
-      margin-top: 20px;
-    }
-  
-    .image-container img {
-      max-width: 100%;
-    }
-  
-    .concert-info {
-      margin-top: 30px;
-    }
-  
-    .city,
-    .dates {
-      font-size: 14px;
-    }
-  }
+}

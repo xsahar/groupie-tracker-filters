@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+// GetAllArtists retrieves a list of all artists from the Groupie Trackers API
 func GetAllArtists() ([]Artist, error) {
 	var artists []Artist
 	response, err := http.Get("https://groupietrackers.herokuapp.com/api/artists")
@@ -25,6 +26,7 @@ func GetAllArtists() ([]Artist, error) {
 	return artists, nil
 }
 
+// GetAllLocations retrieves a list of all locations from the Groupie Trackers API
 func GetAllLocations() (Loc, error) {
 	var location Loc
 	response, err := http.Get("https://groupietrackers.herokuapp.com/api/locations")
@@ -43,6 +45,7 @@ func GetAllLocations() (Loc, error) {
 	return location, nil
 }
 
+// OneArtist retrieves information about a specific artist from the Groupie Trackers API
 func OneArtist(id int) (Artist, error) {
 	var artist Artist
 	response, err := http.Get(fmt.Sprintf("https://groupietrackers.herokuapp.com/api/artists/%d", id))
@@ -61,8 +64,9 @@ func OneArtist(id int) (Artist, error) {
 	return artist, nil
 }
 
+// GetLocation retrieves information about a specific location from the Groupie Trackers API
 func GetLocation(id int) (Loc, error) {
-	var location Loc // see the structure
+	var location Loc
 	response, err := http.Get(fmt.Sprintf("https://groupietrackers.herokuapp.com/api/locations/%d", id))
 	if err != nil {
 		return location, err
@@ -78,6 +82,7 @@ func GetLocation(id int) (Loc, error) {
 	return location, nil
 }
 
+// Relations retrieves information about the relationships between an artist and the Groupie Trackers API
 func Relations(id int) (Relation, error) {
 	var rel Relation
 	response, err := http.Get(fmt.Sprintf("https://groupietrackers.herokuapp.com/api/relation/%d", id))
@@ -94,4 +99,3 @@ func Relations(id int) (Relation, error) {
 	}
 	return rel, nil
 }
-
